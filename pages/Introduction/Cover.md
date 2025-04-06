@@ -21,9 +21,6 @@ mdc: true
 #  ogImage: https://cover.sli.dev
 ---
 
-# ViewModelがあなたを救う方法
+# ViewModelで取り戻すエンジニアリングライフ
 
 UIライブラリに依存しない生活
-
-※ UIライブラリ非依存はいい考え方。タイトルもそれっぽくできそう
-※ さっきは「MVVMでよいという提案」としたが、もう一回考えたい
