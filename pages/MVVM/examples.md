@@ -100,3 +100,7 @@ class CounterViewModel {
 - ViewModelは簡単に単体テスト可能
 - ViewModelはUIライブラリ非依存
 - ViewModelを使えば状態管理ライブラリ不要
+- HTML/CSS/UIライブラリの知識不要
+- 純粋なプログラミングで要件を満たしてくことに集中できる
+
+※ Vue.jsの`reactive`関数を排除することで、よりUIライブラリ非依存にできる
