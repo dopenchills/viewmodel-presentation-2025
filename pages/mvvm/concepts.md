@@ -1,44 +1,39 @@
-# MVVMパターンの導入
+---
+layout: section
+---
 
-- UIライブラリにはUIのレンダリングだけさせる
-- 状態管理ライブラリは使わず、単純なTypeScriptのクラスに置き換える
+
+## Model-View-ViewModel (MVVM) パターンによる解決
 
 ---
 layout: two-cols-header
-class: text-sm
 ---
 
-# MVVMパターン
+# Model-View-ViewModel (MVVM) パターン
 
 ![MVVM Pattern](./.images/mvvm-pattern.png)
 
+[Reference](https://learn.microsoft.com/ja-jp/dotnet/architecture/maui/mvvm)
+
 ::left::
-<div class="pr-4">
 
 ## View
 
 見た目やレイアウトのロジック。
 
-ReactやVueを使ってUIレンダリングを行う。
+ReactやVueを使ってレンダリングする。
 
 ViewModelに依存する。
 
-</div>
-
 ::right::
-<div class="pl-4">
 
 ## ViewModel
 
-Viewをコントロールするロジック。
-
-Viewに変更を通知したり、Viewからユーザーの入力を受け取ったりする。
+Viewを制御するロジック。
 
 純粋なTypeScriptのクラスとして実装可能。
 
 Viewに依存しない。
-
-</div>
 
 ---
 
