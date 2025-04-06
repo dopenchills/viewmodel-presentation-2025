@@ -30,11 +30,7 @@ AngularJSとAngularはほとんど異なるフレームワークであり、書�
 
 公式からはAngularJSとAngularを共存させるツールが提供され、徐々に書き直していくアプローチが提案された。
 
----
-class: text-sm
----
 # AngularJSからの移行
-
 
 大きな工数が必要だった
 
