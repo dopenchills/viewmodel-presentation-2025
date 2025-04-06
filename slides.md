@@ -47,3 +47,7 @@ src: ./pages/mvvm/demo.md
 ---
 src: ./pages/closing/end.md
 ---
+
+---
+src: ./pages/mvvm/appendix.md
+---
