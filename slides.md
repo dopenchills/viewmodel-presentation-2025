@@ -43,3 +43,7 @@ src: ./pages/mvvm/opinionated-understandings.md
 ---
 src: ./pages/mvvm/demo.md
 ---
+
+---
+src: ./pages/closing/end.md
+---
