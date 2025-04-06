@@ -1,29 +1,29 @@
 ---
 theme: apple-basic
 transition: slide-left
-src: ./pages/Introduction/Cover.md
+src: ./pages/introduction/cover.md
 ---
 
 ---
-src: ./pages/Introduction/Frontend Development.md
+src: ./pages/introduction/frontend-development.md
 ---
 
 ---
-src: ./pages/UI Library Migrations/Introduction.md
+src: ./pages/ui-library-migrations/introduction.md
 ---
 
 ---
-src: ./pages/UI Library Migrations/AngularJS.md
+src: ./pages/ui-library-migrations/angularjs.md
 ---
 
 ---
-src: ./pages/UI Library Migrations/Recoil.md
+src: ./pages/ui-library-migrations/recoil.md
 ---
 
 ---
-src: ./pages/UI Library Migrations/End.md
+src: ./pages/ui-library-migrations/end.md
 ---
 
 ---
-src: ./pages/MVVM/Concepts.md
+src: ./pages/mvvm/concepts.md
 ---

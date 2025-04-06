@@ -13,5 +13,5 @@ Metaによる人員整理の影響で開発が継続できなくなり、2025年
 Xの反応
 
 <SlidevVideo autoplay controls>
-  <source src="./.videos/Recoil Migration on X.webm" type="video/webm" />
+  <source src="./.videos/recoil-migration-on-x.webm" type="video/webm" />
 </SlidevVideo>
