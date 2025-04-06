@@ -14,6 +14,3 @@
 - 音声対話UI (OpenAI Realtime API)
 
 [GitHubリポジトリ](https://github.com/dopenchills/note-viewmodel-demo-202502)
-
----
-
