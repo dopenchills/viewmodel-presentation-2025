@@ -1,4 +1,10 @@
 ---
+layout: section
+---
+
+## MVVMの考え方 (個人的な意見をより多く含む)
+
+---
 layout: two-cols-header
 ---
 
@@ -11,9 +17,9 @@ ViewModelはViewに依存しないので、以下の特徴を持つ
 - フレームワーク非依存
 - テスト可能
 
-クリーンアーキテクチャに従うバックエンドではDBの移行が簡単になる。
+クリーンアーキテクチャに従うバックエンドではデータ永続化に用いる技術の移行が簡単である。
 
-同様に、フロントエンドでもUIライブラリの移行が簡単になる。
+同様に、MVVMに従うフロントエンドでもUIライブラリの移行が簡単になる。
 
 ::right::
 
@@ -23,9 +29,11 @@ ViewModelはViewに依存しないので、以下の特徴を持つ
 layout: two-cols-header
 ---
 
-# ViewはHow, ViewModelはWhat
+# ViewはHow、ViewModelはWhat
 
-ViewとViewModelのどちらにロジックを書こうか迷った際、ViewはHow, ViewModelはWhatを書くという考え方ができる。
+ViewとViewModelのどちらにロジックを書こうか迷った際「ViewはHow, ViewModelはWhatを記述する」と考えると分かりやすい。
+
+例えばViewModelはi18nのキーを扱うことができるが、そのキーをどのように翻訳するかは扱うべきではない。
 
 ::left::
 
