@@ -1,4 +1,5 @@
 ---
+# Documentation: https://sli.dev/
 # You can also start simply with 'default'
 theme: apple-basic
 # random image from a curated Unsplash collection by Anthony
@@ -105,8 +106,10 @@ AngularJSとAngularはほとんど異なるフレームワークであり、書�
 公式からはAngularJSとAngularを共存させるツールが提供され、徐々に書き直していくアプローチが提案された。
 
 ---
-
+class: text-sm
+---
 # AngularJSからの移行
+
 
 大きな工数が必要だった
 
@@ -144,7 +147,7 @@ Xの反応
 
 フロントエンドエンジニアは外部要因によって何年も移行作業をする必要が出てくる可能性がある。
 
-全てを.vueファイルで記述していると、Vue.jsがEOLしたときに会社の資産を全て失うことに繋がる。
+全てを.vueファイルで記述していると、Vue.jsがEOLしたときに会社のフロントエンド資産を全て移行する必要が出てくる。
 
 ## MVVMパターンの導入
 
@@ -152,17 +155,26 @@ Xの反応
 - 状態管理ライブラリは使わず、単純なTypeScriptのクラスに置き換える
 
 ---
+layout: two-cols-header
+---
 
 # MVVMパターン
 
 ![MVVM Pattern](./pages/MVVM/.images/mvvm-pattern.png)
 
+::left::
+<div class="pr-4">
 
 ## View
 
-ユーザーが画面で見る、見た目やレイアウトなどのロジック。
+見た目やレイアウトのロジック。
 
 モダンなフロントエンド開発では、ReactやVueのコンポーネントを使ってUIレンダリングを行うことが多い。
+
+</div>
+
+::right::
+<div class="pl-4">
 
 ## ViewModel
 
@@ -172,6 +184,8 @@ Viewに変更を通知したり、Viewからユーザーの入力を受け取っ
 
 純粋なTypeScriptのクラスとして実装可能。
 
+</div>
+
 ## 重要な点
 
 フロントエンド上で、UIに関するロジック(View)と、それ以外のロジック(ViewModel)に分離すること。
@@ -179,3 +193,4 @@ Viewに変更を通知したり、Viewからユーザーの入力を受け取っ
 ViewModelはTypeScriptのクラスとして記述する。
 
 ---
+
