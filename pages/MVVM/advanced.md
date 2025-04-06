@@ -131,6 +131,71 @@ layout: two-cols-header
 zoom: 0.8
 ---
 
+# Tips: `EventAggregator`の利用
+
+ViewModel間の通信をPub/Subベースで行うとViewModel同士を疎結合にできる。
+
+以下は、エラー処理は別のViewModelなどに分離した方が保守しやすいというアイディア
+
+::left::
+
+```ts {*|13-17|*}
+@injectable()
+class ViewModelThatThrowsError {
+   
+  constructor(
+    @inject(TYPES.EventAggregator)
+    ea: IEventAggregator
+  ){}
+
+  run() {
+    try {
+      logicThatThrows()
+    } catch (error) {
+      this.ea.publish(
+        new ErrorThrownEvent(error)
+      )
+    }
+  }
+}
+```
+
+::right::
+
+```ts {*|15-18|*}
+@injectable()
+class ViewModelThatLogsError {
+  subscriptions: ISubscription[] = []
+
+  constructor(
+    @inject(TYPES.EventAggregator)
+    ea: IEventAggregator,
+
+    @inject(TYPES.TelemetryClient)
+    tc: ITelemetryClient
+  ){}
+
+  async load() {
+    this.subscriptions.push(
+      const subscription = this.ea.subscribe(ErrorThrownEvent, (event) => {
+        console.log(event.error.message)
+        tc.trackException(event.error)
+      })
+    )
+  }
+
+  async unload() {
+    this.subscriptions.forEach((s) => s.unsubscribe())
+  }
+}
+```
+
+
+---
+layout: two-cols-header
+zoom: 0.8
+---
+
 # Tips: `reactive`関数の排除
 
 RxJSの`BehaviorSubject`を利用して、`reactive`関数を排除できる。
