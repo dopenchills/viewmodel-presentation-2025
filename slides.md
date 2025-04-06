@@ -40,4 +40,6 @@ src: ./pages/mvvm/advanced.md
 src: ./pages/mvvm/opinionated-understandings.md
 ---
 
-
+---
+src: ./pages/mvvm/demo.md
+---
