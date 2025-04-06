@@ -5,6 +5,7 @@
 
 ---
 layout: two-cols-header
+class: text-sm
 ---
 
 # MVVMパターン
@@ -18,7 +19,9 @@ layout: two-cols-header
 
 見た目やレイアウトのロジック。
 
-モダンなフロントエンド開発では、ReactやVueのコンポーネントを使ってUIレンダリングを行うことが多い。
+ReactやVueを使ってUIレンダリングを行う。
+
+ViewModelに依存する。
 
 </div>
 
@@ -33,10 +36,18 @@ Viewに変更を通知したり、Viewからユーザーの入力を受け取っ
 
 純粋なTypeScriptのクラスとして実装可能。
 
+Viewに依存しない。
+
 </div>
 
-## 重要な点
+---
 
-フロントエンド上で、UIに関するロジック(View)と、それ以外のロジック(ViewModel)に分離すること。
+# 重要な点
 
-ViewModelはTypeScriptのクラスとして記述する。
+UIに関するロジックと、それ以外のロジックを分離すること。
+
+| ロジックの種類 | レイヤー | 実装方法 |
+|-------------|------------|---------|
+| UIに関するロジック | View | UIライブラリ (React, Vue, etc.) |
+| それ以外のロジック | ViewModel | 純粋なTypeScript |
+
