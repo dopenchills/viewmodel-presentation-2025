@@ -1,4 +1,10 @@
 ---
+layout: section
+---
+
+## 純粋なプログラミングで問題を解決する例
+
+---
 layout: two-cols-header
 zoom: 0.8
 ---
@@ -14,8 +20,8 @@ Dependency Injectionを利用して疎結合なプログラミングが可能。
 ```ts
 @injectable()
 class ProfileViewModel implements IProfileViewModel {
-  name: string = ''
-  age: number = undefined
+  public name: string = ''
+  public age: number | undefined = undefined
 
   constructor(
     @inject(TYPES.UserService)
@@ -30,7 +36,7 @@ class ProfileViewModel implements IProfileViewModel {
 }
 ```
 
-※ InversifyJSで依存を解決している
+※ InversifyJSでDIを行っている
 
 
 ::right::
