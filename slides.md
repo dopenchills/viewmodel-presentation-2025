@@ -31,3 +31,7 @@ src: ./pages/mvvm/concepts.md
 ---
 src: ./pages/mvvm/examples.md
 ---
+
+---
+src: ./pages/mvvm/advanced.md
+---
