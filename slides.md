@@ -1,5 +1,6 @@
 ---
 theme: apple-basic
+transition: slide-left
 src: ./pages/Introduction/Cover.md
 ---
 
