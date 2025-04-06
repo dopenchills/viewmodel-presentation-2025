@@ -20,7 +20,11 @@ Googleが開発したフロントエンドWebフレームワーク。
 layout: fact
 ---
 
+## AngularJSは一定のシェアを獲得したのちEOLになった
+
 ![NPM Trends](./.images/npm-trends.png)
+
+<!-- NPM Trends, Angularいらないかも。AngularJSだけの方がいいかも。 -->
 
 ---
 
