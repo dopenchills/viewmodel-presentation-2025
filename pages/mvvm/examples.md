@@ -1,4 +1,14 @@
+---
+layout: section
+---
+
+## "Vue.jsのみの実装" vs "Vue.js + ViewModelの実装"
+
+---
+
 # Vue.jsのみの実装
+
+カウンターアプリを実装すると以下のようになる:
 
 ```vue
 <template>
@@ -28,7 +38,7 @@ function decrement() {
 layout: two-cols-header
 ---
 
-# 問題点
+# Vue.jsのみの実装の問題点
 
 ::left::
 
@@ -58,18 +68,21 @@ function decrement() {
 
 ::right::
 
-- `script setup`内の再利用性
-- `script setup`内のテスタビリティ
-- UIライブラリへの不要な依存
+- `script setup`内の再利用性が低い
+- `script setup`内のテスタビリティが低い
+- UIライブラリへ不必要に依存している
 
 
 ---
 layout: two-cols-header
+zoom: 0.9
 ---
 
 # ViewModelを利用した場合
 
 ::left::
+
+👇 Viewの実装
 
 ```vue
 <template>
@@ -85,6 +98,8 @@ const vm = reactive(new CounterViewModel())
 </script>
 ```
 
+👇 ViewModelの実装
+
 ```ts
 class CounterViewModel {
   count = 0
@@ -96,11 +111,13 @@ class CounterViewModel {
 
 ::right::
 
-- ViewModelは再利用可能
-- ViewModelは簡単に単体テスト可能
-- ViewModelはUIライブラリ非依存
-- ViewModelを使えば状態管理ライブラリ不要
-- HTML/CSS/UIライブラリの知識不要
+ViewModel導入によるメリット
+
+- 再利用可能
+- 単体テスト可能
+- UIライブラリ非依存
+- 状態管理ライブラリが不要
+- HTML/CSS/UIライブラリの知識が不要
 - 純粋なプログラミングで要件を満たしてくことに集中できる
 
 ※ Vue.jsの`reactive`関数を排除することで、よりUIライブラリ非依存にできる
