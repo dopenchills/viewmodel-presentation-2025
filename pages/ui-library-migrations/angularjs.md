@@ -1,10 +1,18 @@
+---
+layout: section
+---
+
+## AngularJSのEOL
+
+---
+
 # [AngularJS](https://github.com/angular/angular.js)
 
 Googleが開発したフロントエンドWebフレームワーク。
 
 2010年に開発が開始され、人気になった。
 
-一方でGoogleはTypeScriptベースでのAngular(v2+)も並行して開発し、2016年にリリースした。AngularJSが抱えていたパフォーマンス上の問題も解決するものだった。
+一方でTypeScriptベースのAngularも並行してGoogleは開発しており、2016年にリリースした。AngularJSが抱えていたパフォーマンス上の問題も解決するものだった。
 
 結局Angularの方が人気となり、AngularJSのEOLの計画が2018年に発表された。
 
