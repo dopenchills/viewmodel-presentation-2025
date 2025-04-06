@@ -27,3 +27,7 @@ src: ./pages/ui-library-migrations/end.md
 ---
 src: ./pages/mvvm/concepts.md
 ---
+
+---
+src: ./pages/mvvm/examples.md
+---
