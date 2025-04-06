@@ -1,28 +1,22 @@
 # [AngularJS](https://github.com/angular/angular.js)
 
-Googleが開発したフロントエンド向けWebフレームワーク。
+Googleが開発したフロントエンドWebフレームワーク。
 
 2010年に開発が開始され、人気になった。
 
-一方でGoogleはTypeScriptベースでのAngular(v2+)を並行して開発し、2016年にリリースした。AngularJSが抱えていたパフォーマンス上の問題も解決するものだった。
+一方でGoogleはTypeScriptベースでのAngular(v2+)も並行して開発し、2016年にリリースした。AngularJSが抱えていたパフォーマンス上の問題も解決するものだった。
 
+結局Angularの方が人気となり、AngularJSのEOLの計画が2018年に発表された。
 
 ---
 layout: fact
 ---
 
-![Google Trends of AngularJS](./.images/google-trends.png)
-
-<!-- ピークが2027年ごろにあるということを強調した画像にした方が良さそう -->
-<!-- Reference: https://trends.google.com/trends/explore?cat=32&date=2012-01-01%202022-01-01&q=%2Fm%2F0j45p7w,%2Fg%2F11c0vmgx5d,%2Fm%2F012l1vxv&hl=en-GB -->
+![NPM Trends](./.images/npm-trends.png)
 
 ---
 
-# AngularJSのEOL
-
-**[2022年をもって公式のサポートが終了した](https://docs.angularjs.org/misc/version-support-status)**
-
-## 移行先
+# [AngularJSのEOL (2022年)](https://docs.angularjs.org/misc/version-support-status)
 
 AngularJSの後継であるAngularへの移行が推奨された。
 
@@ -36,7 +30,7 @@ AngularJSとAngularはほとんど異なるフレームワークであり、書�
 
 # AngularJSからの移行
 
-大きな工数が必要だった
+書き直しとなるため、別UIフレームワークに移行するプロジェクトもあった。
 
 | 会社/プロジェクト | 移行期間 | 移行先 | 備考 | 参照リンク |
 |-----------------|---------|-------|------|----------|
