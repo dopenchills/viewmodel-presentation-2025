@@ -1,4 +1,12 @@
-# デモ: ViewModelの移植性
+---
+layout: section
+---
+
+## デモ: ViewModelの移植性
+
+---
+
+同じViewModelを、複数のUIで使い回すことができる
 
 <Transform :scale="0.6">
   <img src="./.images/clean-architecture-demo.png" />
@@ -6,11 +14,9 @@
 
 ---
 
-# デモ: ViewModelの移植性
-
-同じViewModelを、以下の2つのUIで使い回せることを示す
+今回のデモでは、同じViewModelを2つのUIで使い回せることを示す
 
 - WebUI (Vue.js)
-- 音声対話UI (OpenAI Realtime API)
+- 音声対話UI (OpenAI's Realtime API)
 
 [GitHubリポジトリ](https://github.com/dopenchills/note-viewmodel-demo-202502)
