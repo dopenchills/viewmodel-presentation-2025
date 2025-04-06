@@ -1,18 +1,20 @@
-# AngularJS
+# [AngularJS](https://github.com/angular/angular.js)
 
-Googleに支援されたフロントエンド向けWebフレームワーク
+Googleが開発したフロントエンド向けWebフレームワーク。
 
-当時は双方向データバインディングという考えが新しく、フロントエンド向けWebフレームワークとして人気になった。
+2010年に開発が開始され、人気になった。
+
+一方でGoogleはTypeScriptベースでのAngular(v2+)を並行して開発し、2016年にリリースした。AngularJSが抱えていたパフォーマンス上の問題も解決するものだった。
+
 
 ---
-
-# AngularJSの人気
+layout: fact
+---
 
 ![Google Trends of AngularJS](./.images/google-trends.png)
 
-[Reference](https://trends.google.com/trends/explore?cat=32&date=2012-01-01%202022-01-01&q=%2Fm%2F0j45p7w,%2Fg%2F11c0vmgx5d,%2Fm%2F012l1vxv&hl=en-GB)
-
 <!-- ピークが2027年ごろにあるということを強調した画像にした方が良さそう -->
+<!-- Reference: https://trends.google.com/trends/explore?cat=32&date=2012-01-01%202022-01-01&q=%2Fm%2F0j45p7w,%2Fg%2F11c0vmgx5d,%2Fm%2F012l1vxv&hl=en-GB -->
 
 ---
 
