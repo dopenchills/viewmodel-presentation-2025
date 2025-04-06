@@ -126,6 +126,53 @@ onMounted(async () => {
 </script>
 ```
 
+---
+layout: two-cols-header
+zoom: 0.8
+---
 
+# Tips: `reactive`関数の排除
 
+RxJSの`BehaviorSubject`を利用して、`reactive`関数を排除できる。
 
+ViewModel → Viewの通信がUIライブラリ非依存になる。
+
+::left::
+
+```ts
+@injectable()
+class CounterViewModel {
+  count = new BehaviorSubject<number>(0)
+
+  increment() { this.count.next(this.count + 1) }
+  decrement() { this.count.next(this.count - 1) }
+}
+```
+
+::right::
+```vue
+<template>
+  <div>{{ vm.count }}</div>
+  <div>
+    <button @click="vm.increment">Increment</button>
+    <button @click="vm.decrement">Decrement</button>
+  </div>
+</template>
+
+<script setup lang="ts">
+const vm = new CounterViewModel()
+
+const count = ref<number>(0)
+let subscription
+
+onMounted(() => {
+  subscription = vm.count.subscribe(value => {
+    this.count.value = value
+  })
+})
+
+onUnmounted(() => {
+  subscription.unsubscribe()
+})
+</script>
+```
