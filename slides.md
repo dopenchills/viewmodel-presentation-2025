@@ -35,3 +35,7 @@ src: ./pages/mvvm/examples.md
 ---
 src: ./pages/mvvm/advanced.md
 ---
+
+---
+src: ./pages/mvvm/opinionated-understandings.md
+---
