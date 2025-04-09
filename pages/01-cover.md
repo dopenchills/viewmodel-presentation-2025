@@ -2,8 +2,10 @@
 layout: cover
 transition: slide-left
 ---
-# フロントエンドが辛くならないためのアーキテクチャ
 
-## MVVM パターンによる依存の整理
+# 依存を整理する
+# フロントエンド
+
+## ViewModelのススメ
 
 2025年4月
