@@ -402,7 +402,7 @@ onMounted(async () => {
 layout: two-cols-header
 ---
 
-## DIライブラリを活用する
+## Tips: DIライブラリを活用する
 
 ::left::
 
