@@ -193,7 +193,7 @@ layout: two-cols-header
     <p>カウント: {{ counter.count }}</p>
     <button
       @click="counter.increment"
-      :disabled="!counter.canIncrement()"
+      :disabled="!counter.canIncrement"
     >
       カウントアップ
     </button>
@@ -216,12 +216,12 @@ class Counter {
   public count: number = 0
   public readonly countMax: number = 100
   
-  canIncrement(): boolean {
+  get canIncrement(): boolean {
     return this.count + 1 <= this.countMax
   }
 
   increment(): void {
-    if (this.canIncrement()) {
+    if (this.canIncrement) {
       this.count++
     }
   }
