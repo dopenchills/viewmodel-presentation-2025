@@ -322,7 +322,7 @@ layout: two-cols-header
 <div class="pt-2">
 
 ```ts
-export interface ICounterService {
+interface ICounterService {
   get(): Promise<number>
   update(count: number): Promise<void>
 }
