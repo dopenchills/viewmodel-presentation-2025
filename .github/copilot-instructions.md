@@ -7,9 +7,9 @@ The contents will be in the "Contents" section.
 
 # TODO
 
-- Create all the empty pages
-- Create tentative cover page
-- Choose good theme of Slidiv
+- ✅ Create all the empty pages
+- ✅ Create tentative cover page
+- ✅ Choose good theme of Slidiv -> default
 - Fill each page
 
 
