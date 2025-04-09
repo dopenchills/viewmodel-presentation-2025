@@ -55,7 +55,7 @@ function increment() {
 核となるロジックが切り出せていないので...
 
 - ❌ コードベース全体がVueのバージョンアップグレード・EOLに影響を受ける
-- ❌　テストにVue Test Utilsが必要
+- ❌ テストにVue Test Utilsが必要
 
 </div>
 
@@ -107,7 +107,8 @@ class Counter {
 
 核となるロジックが切り出せたので
 
-- ⭕️ UIフレームワークから核となるロジックを守れた
+- ⭕️ UIフレームワーク非依存
+- ⭕️ 移植可能
 - ⭕️ 単体テスト可能
 
 </div>
@@ -137,11 +138,9 @@ layout: two-cols-header
 
 ## Vue.jsでのバリデーション実装
 
-人気ライブラリ、VeeValidateを使ったバリデーションを実装した例
-
 ::left::
 
-```vue {*|13-25}{ maxHeight:'350px' }
+```vue {*|12-22|*}{ maxHeight:'350px' }
 <template>
   <div>
     <p>カウント: {{ count }}</p>
@@ -153,7 +152,6 @@ layout: two-cols-header
 
 <script setup lang="ts">
 import { ref, computed } from 'vue'
-import { useField, useForm } from 'vee-validate'
 
 const countMax = 100
 const count = ref(0)
@@ -238,9 +236,9 @@ class Counter {
 
 バリデーションロジックを切り出せたので
 
-- ⭕️ 再利用可能
+- ⭕️ UIフレームワーク非依存
+- ⭕️ 移植可能
 - ⭕️ 単体テスト可能
-- ⭕️ UIフレームワークに依存しない
 
 </div>
 
@@ -367,7 +365,8 @@ DIのメリットを享受できる
 
 今まで通り...
 
-- ⭕️ 再利用可能
+- ⭕️ UIフレームワーク非依存
+- ⭕️ 移植可能
 - ⭕️ 単体テスト可能
 
 </div>

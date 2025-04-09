@@ -1,4 +1,10 @@
+---
+layout: section
+transition: slide-left
+---
+
 # Model-View-ViewModel (MVVM) パターン
+
 
 ---
 
