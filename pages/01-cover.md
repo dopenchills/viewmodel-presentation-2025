@@ -1,3 +1,7 @@
+---
+layout: cover
+transition: slide-left
+---
 # フロントエンドが辛くならないためのアーキテクチャ
 
 ## MVVM パターンによる依存の整理
