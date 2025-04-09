@@ -1,14 +1,8 @@
 ---
 theme: default
-background: https://source.unsplash.com/collection/94734566/1920x1080
 class: text-center
 highlighter: shiki
 lineNumbers: false
-info: |
-  ## フロントエンドが辛くならないためのアーキテクチャ
-  MVVM パターンによる依存の整理
-
-  詳細については [GitHub](https://github.com/your-username/mvvm-dv) をご覧ください
 drawings:
   persist: false
 transition: slide-left
