@@ -114,6 +114,17 @@ class Counter {
 </div>
 
 ---
+
+## 移植の例
+
+
+---
+
+## テストの比較
+
+
+
+---
 layout: section
 transition: slide-left
 ---
