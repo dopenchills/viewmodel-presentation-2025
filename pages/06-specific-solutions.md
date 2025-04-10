@@ -114,8 +114,12 @@ class Counter {
 </div>
 
 ---
+layout: two-cols-header
+---
 
 ## 移植の例
+
+<!-- Compare Vue with ViewModel and React with ViewModel, showing same ViewModel can be reused -->
 
 
 ---
