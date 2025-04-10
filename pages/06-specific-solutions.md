@@ -117,15 +117,135 @@ class Counter {
 layout: two-cols-header
 ---
 
-## 移植の例
+## Reactへの移植の例
 
-<!-- Compare Vue with ViewModel and React with ViewModel, showing same ViewModel can be reused -->
+<div class="pt-4"></div>
 
+核となるロジックをReactでも再利用できる
+
+<div class="text-xs">
+
+Reactの場合、再レンダリングの仕組みは必要 / 
+このような実装差異をリアクティブプログラミングで回避する方法はAppendixに記載
+
+</div>
+
+::left::
+
+<p class="font-bold text-center">核となるロジック</p>
+
+
+<!-- TODO: 本当に動くか検証 -->
+
+```ts
+import { makeAutoObservable } from "mobx";
+
+class Counter {
+  public count: number = 0
+
+  constructor(){
+    // 👇 リアクティブな再レンダリングのためにMobXを利用
+    makeAutoObservable(this);
+  }
+
+  increment(): void {
+    this.count++
+  }
+}
+```
+
+::right::
+
+<div class="pl-4">
+
+<p class="font-bold text-center">Reactで実装したUI</p>
+
+```tsx
+import { observer } from "mobx-react-lite";
+
+const vm = new Counter();
+
+export const SimpleCounter = observer(() => (
+  <div>
+    <p>カウント: {vm.count}</p>
+    <button onClick={vm.increment}>カウントアップ</button>
+  </div>
+));
+```
+
+</div>
 
 ---
 
 ## テストの比較
 
+<div class="pt-4"></div>
+
+<div class="grid grid-cols-2 gap-8">
+
+<div>
+
+<h4>❌ Vue.jsのみで実装した場合</h4>
+
+<div class="pt-4"></div>
+
+
+```ts {*|5|7|1|*}
+import { mount } from '@vue/test-utils'
+import SimpleCounter from './SimpleCounter.vue'
+
+it('should increment when clicking button', async () => {
+  const wrapper = mount(SimpleCounter)
+  
+  await wrapper.find('button').trigger('click')
+  
+  expect(wrapper.text()).toContain('カウント: 1')
+})
+```
+
+</div>
+
+<div>
+
+<h4>⭕️ 核となるロジックを切り出した場合</h4>
+
+<div class="pt-4"></div>
+
+```ts
+import { Counter } from './counter'
+
+it('should increment', () => {
+  const counter = new Counter()
+  
+  counter.increment()
+  
+  expect(counter.count).toBe(1)
+})
+```
+
+</div>
+
+<div>
+
+<ul>
+<li>❌ コンポーネントのマウントが必要</li>
+<li>❌ ボタンの数など、UI起因で壊れる</li>
+<li>❌ UIフレームワークに依存している</li>
+</ul>
+
+</div>
+
+<div>
+
+<ul>
+<li>⭕️ 単体テストができる</li>
+<li>⭕️ UI起因で壊れない</li>
+<li>⭕️ UIフレームワーク非依存</li>
+</ul>
+
+</div>
+
+</div>
 
 
 ---
