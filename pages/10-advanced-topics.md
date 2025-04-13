@@ -7,6 +7,12 @@ transition: slide-left
 # 特別扱いしない
 
 ---
+
+## フロントエンドとバックエンドは別物？
+
+
+
+---
 layout: two-cols-header
 ---
 
@@ -37,4 +43,6 @@ layout: two-cols-header
 
 ---
 
-## アプリケーションとして共通のガイドライン
+## 共通点: APIコール
+
+
