@@ -163,12 +163,14 @@ class Counter {
 ```tsx
 import { observer } from "mobx-react-lite";
 
-const vm = new Counter();
+const counter = new Counter();
 
 export const SimpleCounter = observer(() => (
   <div>
-    <p>カウント: {vm.count}</p>
-    <button onClick={vm.increment}>カウントアップ</button>
+    <p>カウント: {counter.count}</p>
+    <button onClick={() => counter.increment()}>
+      カウントアップ
+    </button>
   </div>
 ));
 ```
