@@ -1,53 +1,66 @@
 ---
-theme: apple-basic
+theme: default
+class: text-center
+highlighter: shiki
+lineNumbers: false
+drawings:
+  persist: false
 transition: slide-left
-src: ./pages/introduction/cover.md
+title: フロントエンドが辛くならないためのアーキテクチャ - MVVM パターン
+mdc: true
 ---
 
+<!-- Cover page -->
 ---
-src: ./pages/introduction/frontend-development.md
----
-
----
-src: ./pages/ui-library-migrations/introduction.md
+src: ./pages/01-cover.md
 ---
 
+<!-- Introduction -->
 ---
-src: ./pages/ui-library-migrations/angularjs.md
----
-
----
-src: ./pages/ui-library-migrations/recoil.md
+src: ./pages/02-introduction.md
 ---
 
+<!-- Why is it painful -->
 ---
-src: ./pages/ui-library-migrations/end.md
----
-
----
-src: ./pages/mvvm/concepts.md
+src: ./pages/03-why-painful.md
 ---
 
+<!-- Solution Overview -->
 ---
-src: ./pages/mvvm/examples.md
----
-
----
-src: ./pages/mvvm/advanced.md
+src: ./pages/04-solution-overview.md
 ---
 
+<!-- Solution Approach -->
 ---
-src: ./pages/mvvm/opinionated-understandings.md
----
-
----
-src: ./pages/mvvm/demo.md
+src: ./pages/05-solution-approach.md
 ---
 
+<!-- Specific Solutions -->
 ---
-src: ./pages/closing/end.md
+src: ./pages/06-specific-solutions.md
 ---
 
+<!-- MVVM Pattern -->
 ---
-src: ./pages/mvvm/appendix.md
+src: ./pages/07-mvvm-pattern.md
+---
+
+<!-- ViewModel UI Independence -->
+---
+src: ./pages/08-viewmodel-independence.md
+---
+
+<!-- Summary -->
+---
+src: ./pages/09-summary.md
+---
+
+<!-- Advanced Topics -->
+---
+src: ./pages/10-advanced-topics.md
+---
+
+<!-- Appendix -->
+---
+src: ./pages/11-appendix.md
 ---
