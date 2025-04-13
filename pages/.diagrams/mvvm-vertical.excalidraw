@@ -6,8 +6,8 @@
     {
       "id": "XF3yE0MlpQF9s19I-i6Xv",
       "type": "rectangle",
-      "x": 136.82396914408758,
-      "y": 536.5875742128368,
+      "x": 135.77487596203304,
+      "y": 417.89076560565206,
       "width": 179.0476212387592,
       "height": 80,
       "angle": 0,
@@ -25,8 +25,8 @@
         "type": 3
       },
       "seed": 940670128,
-      "version": 459,
-      "versionNonce": 2127134517,
+      "version": 521,
+      "versionNonce": 1182674581,
       "isDeleted": false,
       "boundElements": [
         {
@@ -42,15 +42,15 @@
           "type": "arrow"
         }
       ],
-      "updated": 1744513993680,
+      "updated": 1744515280322,
       "link": null,
       "locked": false
     },
     {
       "id": "DjAnQDUz-DPJ2ulxtLy11",
       "type": "text",
-      "x": 153.93982077909214,
-      "y": 557.6875742128368,
+      "x": 152.8907275970376,
+      "y": 438.9907656056521,
       "width": 144.81591796875,
       "height": 37.800000000000004,
       "angle": 0,
@@ -66,11 +66,11 @@
       "index": "a3",
       "roundness": null,
       "seed": 740189872,
-      "version": 445,
-      "versionNonce": 227734011,
+      "version": 507,
+      "versionNonce": 448642203,
       "isDeleted": false,
       "boundElements": [],
-      "updated": 1744513993680,
+      "updated": 1744515280322,
       "link": null,
       "locked": false,
       "text": "ViewModel",
@@ -86,8 +86,8 @@
     {
       "id": "AP6HfMQrpXuyjESC9SoBp",
       "type": "rectangle",
-      "x": 136.82396914408758,
-      "y": 913.1710747154457,
+      "x": 135.77487596203304,
+      "y": 639.0555329880776,
       "width": 179.0476212387592,
       "height": 80,
       "angle": 0,
@@ -105,8 +105,8 @@
         "type": 3
       },
       "seed": 1323374672,
-      "version": 434,
-      "versionNonce": 635938837,
+      "version": 488,
+      "versionNonce": 302492917,
       "isDeleted": false,
       "boundElements": [
         {
@@ -118,15 +118,15 @@
           "type": "arrow"
         }
       ],
-      "updated": 1744513991078,
+      "updated": 1744515268156,
       "link": null,
       "locked": false
     },
     {
       "id": "avrIdr8EO4x1W55stTvey",
       "type": "text",
-      "x": 186.58780051542038,
-      "y": 934.2710747154457,
+      "x": 185.53870733336583,
+      "y": 660.1555329880777,
       "width": 79.51995849609375,
       "height": 37.800000000000004,
       "angle": 0,
@@ -142,11 +142,11 @@
       "index": "a7",
       "roundness": null,
       "seed": 1773768272,
-      "version": 425,
-      "versionNonce": 718816949,
+      "version": 479,
+      "versionNonce": 1743538235,
       "isDeleted": false,
       "boundElements": [],
-      "updated": 1744513991078,
+      "updated": 1744515268156,
       "link": null,
       "locked": false,
       "text": "Model",
@@ -162,7 +162,7 @@
     {
       "id": "ekoizRinE7Py8aOvM7V0W",
       "type": "rectangle",
-      "x": 136.82396914408758,
+      "x": 135.77487596203304,
       "y": 167.0403325370799,
       "width": 179.0476212387592,
       "height": 80,
@@ -181,8 +181,8 @@
         "type": 3
       },
       "seed": 1126316720,
-      "version": 321,
-      "versionNonce": 1699267637,
+      "version": 322,
+      "versionNonce": 831181717,
       "isDeleted": false,
       "boundElements": [
         {
@@ -194,14 +194,14 @@
           "type": "arrow"
         }
       ],
-      "updated": 1744513991078,
+      "updated": 1744515279690,
       "link": null,
       "locked": false
     },
     {
       "id": "wrlJr7eUZBjpkgx1OHNAL",
       "type": "text",
-      "x": 193.69980002713908,
+      "x": 192.65070684508453,
       "y": 188.1403325370799,
       "width": 65.29595947265625,
       "height": 37.800000000000004,
@@ -218,11 +218,11 @@
       "index": "a9",
       "roundness": null,
       "seed": 1382507696,
-      "version": 315,
-      "versionNonce": 1043490517,
+      "version": 316,
+      "versionNonce": 2052776501,
       "isDeleted": false,
       "boundElements": [],
-      "updated": 1744513991078,
+      "updated": 1744515279690,
       "link": null,
       "locked": false,
       "text": "View",
@@ -238,9 +238,9 @@
     {
       "id": "iE2RcUGgznum9bYtF3CFN",
       "type": "text",
-      "x": 386.1201404180824,
+      "x": 378.0696195557348,
       "y": 166.1704161388085,
-      "width": 475.8039855957031,
+      "width": 419.8039855957031,
       "height": 37.800000000000004,
       "angle": 0,
       "strokeColor": "#1e1e1e",
@@ -255,30 +255,30 @@
       "index": "aA",
       "roundness": null,
       "seed": 656806064,
-      "version": 366,
-      "versionNonce": 1821697979,
+      "version": 409,
+      "versionNonce": 772983451,
       "isDeleted": false,
       "boundElements": [],
-      "updated": 1744514036531,
+      "updated": 1744515316189,
       "link": null,
       "locked": false,
-      "text": "ロジックはUIに関連するもののみ置く",
+      "text": "UIに関連するロジックを定義する",
       "fontSize": 28,
       "fontFamily": 6,
       "textAlign": "left",
       "verticalAlign": "top",
       "containerId": null,
-      "originalText": "ロジックはUIに関連するもののみ置く",
+      "originalText": "UIに関連するロジックを定義する",
       "autoResize": true,
       "lineHeight": 1.35
     },
     {
       "id": "GR5qNDF-DKqTCKBNCRZzo",
       "type": "arrow",
-      "x": 226.29588441034565,
-      "y": 253.3025252347795,
-      "width": 0.10379070624313158,
-      "height": 277.1353028865169,
+      "x": 224.98820738195886,
+      "y": 252.39441938921956,
+      "width": 0.6209583989075043,
+      "height": 160.2547059704521,
       "angle": 0,
       "strokeColor": "#1e1e1e",
       "backgroundColor": "transparent",
@@ -294,8 +294,8 @@
         "type": 2
       },
       "seed": 1051465296,
-      "version": 257,
-      "versionNonce": 267289045,
+      "version": 322,
+      "versionNonce": 1767742773,
       "isDeleted": false,
       "boundElements": [
         {
@@ -303,7 +303,7 @@
           "id": "X0xcNtnAVouguVrnCevFn"
         }
       ],
-      "updated": 1744513993680,
+      "updated": 1744515280322,
       "link": null,
       "locked": false,
       "points": [
@@ -312,8 +312,8 @@
           0
         ],
         [
-          0.10379070624313158,
-          277.1353028865169
+          0.6209583989075043,
+          160.2547059704521
         ]
       ],
       "lastCommittedPoint": null,
@@ -334,8 +334,8 @@
     {
       "id": "X0xcNtnAVouguVrnCevFn",
       "type": "text",
-      "x": 460.7432723144935,
-      "y": 188.02270560179042,
+      "x": 456.38086913933705,
+      "y": 186.89330808336967,
       "width": 112,
       "height": 37.800000000000004,
       "angle": 0,
@@ -351,11 +351,11 @@
       "index": "aBV",
       "roundness": null,
       "seed": 150017712,
-      "version": 30,
-      "versionNonce": 1173378395,
+      "version": 33,
+      "versionNonce": 1984427003,
       "isDeleted": false,
       "boundElements": [],
-      "updated": 1744513993680,
+      "updated": 1744515280322,
       "link": null,
       "locked": false,
       "text": "依存する",
@@ -371,10 +371,10 @@
     {
       "id": "WoZTol4B7NfdNHBbjia0K",
       "type": "arrow",
-      "x": 223.1628214388453,
-      "y": 622.8119875491635,
-      "width": 1.264183898094899,
-      "height": 278.2596952921424,
+      "x": 224.77926498539537,
+      "y": 503.2070730964189,
+      "width": 1.038843192034534,
+      "height": 129.62430345281928,
       "angle": 0,
       "strokeColor": "#1e1e1e",
       "backgroundColor": "transparent",
@@ -390,8 +390,8 @@
         "type": 2
       },
       "seed": 700240464,
-      "version": 439,
-      "versionNonce": 545735797,
+      "version": 557,
+      "versionNonce": 1212519413,
       "isDeleted": false,
       "boundElements": [
         {
@@ -399,7 +399,7 @@
           "id": "oGht9XWqspQQLZF5eHAyw"
         }
       ],
-      "updated": 1744513998647,
+      "updated": 1744515280322,
       "link": null,
       "locked": false,
       "points": [
@@ -408,8 +408,8 @@
           0
         ],
         [
-          1.264183898094899,
-          278.2596952921424
+          1.038843192034534,
+          129.62430345281928
         ]
       ],
       "lastCommittedPoint": null,
@@ -430,8 +430,8 @@
     {
       "id": "oGht9XWqspQQLZF5eHAyw",
       "type": "text",
-      "x": 1039.7324127376346,
-      "y": 182.50127396344715,
+      "x": 1044.977733737476,
+      "y": 181.79700715396228,
       "width": 112,
       "height": 37.800000000000004,
       "angle": 0,
@@ -447,11 +447,11 @@
       "index": "aD",
       "roundness": null,
       "seed": 758303920,
-      "version": 36,
-      "versionNonce": 1274608283,
+      "version": 39,
+      "versionNonce": 179401019,
       "isDeleted": false,
       "boundElements": [],
-      "updated": 1744513993680,
+      "updated": 1744515280322,
       "link": null,
       "locked": false,
       "text": "依存する",
@@ -467,8 +467,8 @@
     {
       "id": "tCll6nWsRRTs_clymetuv",
       "type": "text",
-      "x": 385.2033809351974,
-      "y": 541.6930802532146,
+      "x": 378.0696195557348,
+      "y": 423.44571964777754,
       "width": 653.2959594726562,
       "height": 37.800000000000004,
       "angle": 0,
@@ -484,11 +484,11 @@
       "index": "aG",
       "roundness": null,
       "seed": 146398384,
-      "version": 443,
-      "versionNonce": 324384917,
+      "version": 486,
+      "versionNonce": 1415602389,
       "isDeleted": false,
       "boundElements": [],
-      "updated": 1744514041234,
+      "updated": 1744515312088,
       "link": null,
       "locked": false,
       "text": "Viewで利用されるプロパティやロジックを定義する",
@@ -504,8 +504,8 @@
     {
       "id": "ibKgwP2EPMAIM3CoONryb",
       "type": "text",
-      "x": 386.1201404180824,
-      "y": 240.34667847660796,
+      "x": 378.0696195557348,
+      "y": 236.34667847660796,
       "width": 592.81591796875,
       "height": 37.800000000000004,
       "angle": 0,
@@ -521,11 +521,11 @@
       "index": "aI",
       "roundness": null,
       "seed": 1721444944,
-      "version": 546,
-      "versionNonce": 1734724533,
+      "version": 551,
+      "versionNonce": 1278525243,
       "isDeleted": false,
       "boundElements": [],
-      "updated": 1744514045884,
+      "updated": 1744515316189,
       "link": null,
       "locked": false,
       "text": "ViewModelのプロパティやロジックを利用する",
@@ -541,8 +541,8 @@
     {
       "id": "5r1-gQZD_aw0QOyX4lx-U",
       "type": "text",
-      "x": 386.1201404180824,
-      "y": 920.9453548587269,
+      "x": 378.0696195557348,
+      "y": 639.86722412943,
       "width": 335.8039855957031,
       "height": 37.800000000000004,
       "angle": 0,
@@ -558,11 +558,11 @@
       "index": "aK",
       "roundness": null,
       "seed": 669030576,
-      "version": 489,
-      "versionNonce": 1567853051,
+      "version": 538,
+      "versionNonce": 124723163,
       "isDeleted": false,
       "boundElements": [],
-      "updated": 1744514040486,
+      "updated": 1744515316189,
       "link": null,
       "locked": false,
       "text": "UIに関係しないデータ構造",

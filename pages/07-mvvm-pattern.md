@@ -12,7 +12,7 @@ transition: slide-left
 
 <div class="pt-4" />
 
-<Transform :scale="0.5">
+<Transform :scale="0.8">
   <img src="./.images/mvvm-vertical.png" />
 </Transform>
 
