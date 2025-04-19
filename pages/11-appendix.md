@@ -63,6 +63,73 @@ const vm = reactive(new ProfileViewModel())
 ```
 </div>
 
+---
+layout: section
+---
+
+# Viewを小さくシンプルに
+
+---
+layout: two-cols-header
+---
+
+## 迷ったらViewModelに書く
+
+移植性が高くテスタブルなViewModelに書く。するとViewもシンプルにできる。
+
+例えばバリデーションのために、プロパティ別のコンポーネントを大量に作る必要がない。
+
+::left::
+
+```vue {*|4,8|4-11}
+<template>
+  <form>
+    <!-- 👇 バリデーション用に異なるコンポーネントを使う -->
+    <first-name
+      :model-value="firstName"
+      @update:model-value="firstName = $event"
+    />
+    <last-name
+      :model-value="lastName"
+      @update:model-value="lastName = $event"
+    />
+  </form>
+</template>
+
+<script setup lang="ts">
+const firstName = ref<string>('')
+const lastName = ref<string>('')
+</script>
+```
+
+::right::
+
+<div class="pl-4">
+
+```vue {*|4,9|4-13}
+<template>
+  <form>
+    <!-- 👇 コンポーネントは同じでOK -->
+    <text-input 
+      :model-value="vm.firstName"
+      @update:model-value="vm.setFirstName($event)"
+      error-messages="vm.errorMessages.get('firstName')"
+    />
+    <text-input 
+      :model-value="vm.lastName"
+      @update:model-value="vm.setLastName($event)"
+      error-messages="vm.errorMessages.get('lastName')"
+    />
+  </form>
+</template>
+
+<script setup lang="ts">
+const vm = reactive(new PersonalInfoViewModel())
+</script>
+```
+
+</div>
+
 
 ---
 layout: section
