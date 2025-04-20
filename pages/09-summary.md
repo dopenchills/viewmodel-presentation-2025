@@ -1,5 +1,6 @@
 ---
 layout: two-cols-header
+transition: slide-left
 ---
 
 ## まとめ
@@ -24,5 +25,7 @@ layout: section
 ---
 
 # 質疑応答
+
+<div></div>
 
 ※ 時間に余裕があれば関連トピック & Appendixに触れたいです
