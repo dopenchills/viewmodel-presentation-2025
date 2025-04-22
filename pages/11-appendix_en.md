@@ -23,7 +23,7 @@ For example, a ViewModel can handle i18n keys, but it shouldn't handle how those
 
 ::left::
 
-```ts
+```ts {*|10-11|*}
 class ProfileViewModel {
   errorKey: I18nKey = ""
 
@@ -44,7 +44,7 @@ class ProfileViewModel {
 
 <div class="pl-4">
 
-```vue
+```vue {*|3-6,14|*}
 <template>
   <div>
     <!-- 👇 View handles "how to display" -->
@@ -82,7 +82,7 @@ For example, you don't need to create many property-specific components just for
 
 ::left::
 
-```vue
+```vue {*|3-4,8|3-11}
 <template>
   <form>
     <!-- 👇 Use different components for validation -->
@@ -107,7 +107,7 @@ const lastName = ref<string>('')
 
 <div class="pl-4">
 
-```vue
+```vue {*|3-4,9|3-13}
 <template>
   <form>
     <!-- 👇 Same component is fine -->
@@ -152,7 +152,7 @@ Also useful to avoid `undefined`-typed properties.
 
 ::left::
 
-```ts
+```ts {*|12-20|3-5|*}
 @injectable()
 class ProfileViewModel implements IProfileViewModel {
   isBusy: boolean = false
@@ -180,7 +180,7 @@ class ProfileViewModel implements IProfileViewModel {
 
 <div class="pl-4">
 
-```vue
+```vue {*|18-20|4-7|*}
 <template>
   <div>
     <h2>Profile</h2>
@@ -219,7 +219,7 @@ For example, it's easier to maintain if error handling is separated into another
 
 ::left::
 
-```ts
+```ts {*|13-17|*}
 @injectable()
 class ViewModelThatThrowsError {
    
@@ -244,7 +244,7 @@ class ViewModelThatThrowsError {
 
 <div class="pl-4">
 
-```ts
+```ts {*|15-18|*}
 @injectable()
 class ViewModelThatLogsError {
   subscriptions: ISubscription[] = []
@@ -287,7 +287,7 @@ Communication from ViewModel to View becomes UI-library independent.
 
 ::left::
 
-```ts
+```ts {*|3|*}
 @injectable()
 class CounterViewModel {
   count = new BehaviorSubject<number>(0)
@@ -301,7 +301,7 @@ class CounterViewModel {
 
 <div class="pl-4">
 
-```vue
+```vue {*|13-23|*}
 <template>
   <div>{{ vm.count }}</div>
   <div>

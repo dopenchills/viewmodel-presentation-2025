@@ -25,7 +25,7 @@ layout: two-cols-header
 
 ::left::
 
-```vue
+```vue {*|11-15|*}
 <template>
   <div>
     <p>Count: {{ count }}</p>
@@ -63,7 +63,9 @@ layout: two-cols-header
 
 ::left::
 
-```vue
+<div class="pt-4">
+
+```vue {*|11}
 <template>
   <div>
     <p>Count: {{ counter.count }}</p>
@@ -78,6 +80,10 @@ const counter = reactive(new Counter())
 </script>
 ```
 
+</div>
+
+<div class="pt-2">
+
 ```ts
 class Counter {
   public count: number = 0
@@ -87,6 +93,8 @@ class Counter {
   }
 }
 ```
+
+</div>
 
 ::right::
 
@@ -110,6 +118,16 @@ layout: two-cols-header
 
 The core logic can be reused in React as well.
 
+<div class="text-xs">
+
+In React, you need a mechanism for re-rendering. See the Appendix for how to avoid such implementation differences with reactive programming.
+
+</div>
+
+::left::
+
+<p class="font-bold text-center">Core logic</p>
+
 ```ts
 import { makeAutoObservable } from "mobx";
 
@@ -117,7 +135,7 @@ class Counter {
   public count: number = 0
 
   constructor(){
-    // Use MobX for reactive rendering
+    // 👇 Use MobX for reactive rendering
     makeAutoObservable(this);
   }
 
@@ -126,6 +144,12 @@ class Counter {
   }
 }
 ```
+
+::right::
+
+<div class="pl-4">
+
+<p class="font-bold text-center">UI implemented in React</p>
 
 ```tsx
 import { observer } from "mobx-react-lite";
@@ -142,6 +166,8 @@ export const SimpleCounter = observer(() => (
 ));
 ```
 
+</div>
+
 ---
 
 ## Test comparison
@@ -154,7 +180,9 @@ export const SimpleCounter = observer(() => (
 
 <h4>❌ Vue.js only implementation</h4>
 
-```ts
+<div class="pt-4"></div>
+
+```ts {*|5|7|1|*}
 import { mount } from '@vue/test-utils'
 import SimpleCounter from './SimpleCounter.vue'
 
@@ -172,6 +200,8 @@ it('should increment when clicking button', async () => {
 <div>
 
 <h4>✅ Core logic extracted</h4>
+
+<div class="pt-4"></div>
 
 ```ts
 import { Counter } from './counter'
@@ -232,7 +262,7 @@ layout: two-cols-header
 
 ::left::
 
-```vue
+```vue {*|12-22|*}{ maxHeight:'350px' }
 <template>
   <div>
     <p>Count: {{ count }}</p>
@@ -277,7 +307,9 @@ layout: two-cols-header
 
 ::left::
 
-```vue
+<div class="pt-2">
+
+```vue {*|4-9|16}{maxHeight: '150px'}
 <template>
   <div>
     <p>Count: {{ counter.count }}</p>
@@ -297,6 +329,10 @@ const counter = reactive(new Counter())
 </script>
 ```
 
+</div>
+
+<div class="pt-2">
+
 ```ts
 class Counter {
   public count: number = 0
@@ -313,6 +349,8 @@ class Counter {
   }
 }
 ```
+
+</div>
 
 ::right::
 
@@ -351,7 +389,7 @@ layout: two-cols-header
 
 ::left::
 
-```vue
+```vue {*|13-29}{maxHeight:'400px'}
 <template>
   <div>
     <p>Count: {{ count }}</p>
@@ -401,12 +439,18 @@ layout: two-cols-header
 
 ::left::
 
+<div class="pt-2">
+
 ```ts
 interface ICounterService {
   get(): Promise<number>
   update(count: number): Promise<void>
 }
 ```
+
+</div>
+
+<div class="pt-2">
 
 ```ts
 class Counter {
@@ -426,6 +470,8 @@ class Counter {
   }
 }
 ```
+
+</div>
 
 ::right::
 
@@ -448,7 +494,7 @@ As before...
 
 ## Example implementation
 
-```vue
+```vue {*|13-19}
 <template>
   <div>
     <p>Count: {{ counter.count }}</p>
@@ -479,7 +525,7 @@ layout: two-cols-header
 
 ::left::
 
-```vue
+```vue {*|13-16}
 <template>
   <div>
     <p>Count: {{ counter.count }}</p>
