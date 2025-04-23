@@ -135,7 +135,7 @@ layout: two-cols-header
 <div class="text-xs">
 
 Reactの場合、再レンダリングの仕組みは必要 / 
-このような実装差異をリアクティブプログラミングで回避する方法はAppendixに記載
+このような実装差異をRxで回避する方法はAppendixに記載
 
 </div>
 
